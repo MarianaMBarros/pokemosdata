@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
-import './reset.css';
 import './style.css';
-import './gallery.theme.css';
-import './gallery.min.css';
+import './Gallery/gallery.theme.css';
+import './Gallery/gallery.min.css';
 import data from './data/pokemon.js';
 console.log(data)
 function App() {
