@@ -1,5 +1,7 @@
 .top{
   color:#FFCC03;
+  display: flex;
+  align-items: center;
   font-size: 60px;
   font-family: 'Grandstander', cursive;
   }
