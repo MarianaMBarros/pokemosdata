@@ -3,6 +3,7 @@ import './style.css';
 import '../../Gallery/gallery.theme.css';
 import '../../Gallery/gallery.min.css';
 import data from '../../data/pokemon.js';
+import Header from "../Header/index";
 import { useHistory } from "react-router-dom";
 
 export default function () {
@@ -14,20 +15,21 @@ export default function () {
 
   return (
     <>
+      <Header />
       <div>
-        <section class="container-search">
-          <div class="container-search-type">
+        <section className="container-search">
+          <div className="container-search-type">
             <label for="">Buscar por tipo:</label>
-            <select name="select" id="select-element">
+            <select name="select">
             </select>
-            <button class="btn-header" id="btn-element">Buscar</button>
+            <button className="btn-header">Buscar</button>
           </div>
-          <div class="container-search-name">
+          <div className="container-search-name">
             <label for="">Buscar por nome:</label>
             <input id="search" type="text" placeholder="Digite o nome do pokemon" />
-            <button class="btn-header" id="btn-name">Buscar</button>
+            <button className="btn-header" >Buscar</button>
           </div>
-          <div class="container-list-order">
+          <div className="container-list-order">
             <label for="">Ordenar:</label>
             <select name="select" id="select-order">
               <option value="">Selecionar</option>
@@ -39,26 +41,25 @@ export default function () {
               <option value="number-desc">maior-menor</option>
             </select>
             <button class="btn-header" id="btn-order">Ordenar</button>
-
           </div>
         </section>
 
-        <section id="container-list">
-          <div class="text">
-            <p class="hide" id="statistics"></p>
-            <ul id="list" class="list">
+        <section>
+          <div className="text">
+            <p className="hide" ></p>
+            <ul className="list">
               {data.pokemon.map(poke => (
                 <li onClick={() => handleDetail(poke.num)}><span> N°{poke.num}<img src={poke.img}
                 /> {poke.name}</span></li>
               ))
               }
             </ul>
-            <button id="loadMore" class="show btn-load-more">Carregar Mais</button>
-            <button id="loadAll" class="hide btn-load-more">Carregar Tudo</button>
+            <button className="show btn-load-more">Carregar Mais</button>
+            <button className="hide btn-load-more">Carregar Tudo</button>
           </div>
         </section>
       </div>
-      <footer class="footer">© By Aline & Mariana - 2020</footer>
+      <footer className="footer">© By Aline Rozetti & Mariana Barros - 2020</footer>
     </>
   );
 }

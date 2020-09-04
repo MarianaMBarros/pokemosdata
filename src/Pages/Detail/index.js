@@ -36,44 +36,44 @@ export default function () {
       <>
         <Header />
         <div>
-          <h3 id="name" class="name-pokemon">{pokemon.current.name} N°{pokemon.current.num}</h3>
-          <div class="next-prev">
-            <span id="previous" class="next-previous" onClick={() => handleDetail(pokemon.previous.num)}> {pokemon.previous.name} N°{pokemon.previous.num}</span>
-            <span id="next" class="next-previous" onClick={() => handleDetail(pokemon.next.num)}>{pokemon.next.name} N°{pokemon.next.num} </span>
+          <h3 className="name-pokemon">{pokemon.current.name} N°{pokemon.current.num}</h3>
+          <div className="next-prev">
+            <span className="next-previous" onClick={() => handleDetail(pokemon.previous.num)}> {pokemon.previous.name} N°{pokemon.previous.num}</span>
+            <span className="next-previous" onClick={() => handleDetail(pokemon.next.num)}>{pokemon.next.name} N°{pokemon.next.num} </span>
           </div>
-          <div class="data-pokemon">
-            <div><img class="img" src={pokemon.current.img} />
-              <div class="data-type">
+          <div className="data-pokemon">
+            <div><img className="img" src={pokemon.current.img} />
+              <div className="data-type">
                 <label>TIPO</label>
                 <ul id="type">
                   {pokemon.current.type.map(item => <li>{item}</li>)}
                 </ul>
               </div>
             </div>
-            <div class="data">
+            <div className="data">
               <h3>Dados do Pokémon</h3>
-              <div class="data-flex">
+              <div className="data-flex">
                 <ul>
-                  <li><label>ALTURA</label><label id="height">{pokemon.current.height}</label></li>
-                  <li><label>PESO</label><label id="weight">{pokemon.current.weight}</label></li>
-                  <li><label>CANDY</label><label id="candy">{pokemon.current.candy}</label></li>
-                  <li><label>CANDY COUNT</label><label id="candy-count">{pokemon.current.candy_count}</label></li>
-                  <li><label>OVOS</label><label id="egg">{pokemon.current.egg}</label></li>
-                  <li><label>CHANCE DE APARECER</label><label id="spawn_chance">{pokemon.current.spawn_chance}</label></li>
-                  <li><label>MÉDIA</label><label id="avg_spawns">{pokemon.current.avg_spawns}</label></li>
-                  <li><label>TEMPO DE DESOVA</label><label id="spawn_time">{pokemon.current.spawn_time}</label></li>
-                  <li><label>MULTIPLICADORES</label><label id="multipliers">{pokemon.current.multipliers}</label></li>
-                  <li><label>FRAQUEZA</label><label id="weaknesses">{pokemon.current.weaknesses}</label></li>
+                  <li><label>ALTURA</label><label>{pokemon.current.height}</label></li>
+                  <li><label>PESO</label><label>{pokemon.current.weight}</label></li>
+                  <li><label>CANDY</label><label>{pokemon.current.candy}</label></li>
+                  <li><label>CANDY COUNT</label><label >{pokemon.current.candy_count}</label></li>
+                  <li><label>OVOS</label><label >{pokemon.current.egg}</label></li>
+                  <li><label>CHANCE DE APARECER</label><label >{pokemon.current.spawn_chance}</label></li>
+                  <li><label>MÉDIA</label><label >{pokemon.current.avg_spawns}</label></li>
+                  <li><label>TEMPO DE DESOVA</label><label >{pokemon.current.spawn_time}</label></li>
+                  <li><label>MULTIPLICADORES</label><label >{pokemon.current.multipliers}</label></li>
+                  <li><label>FRAQUEZA</label><label>{pokemon.current.weaknesses}</label></li>
                 </ul>
               </div>
             </div>
           </div>
-          <ul id="evolution" class="evolu"></ul>
-          <div class="btn-end">
-            <button class="btn-explore"><a href="index.html">Explorar Mais Pokemons</a></button>
+          <ul className="evolu"></ul>
+          <div className="btn-end">
+            <button className="btn-explore"><a href="index.html">Explorar Mais Pokemons</a></button>
           </div>
         </div>
-        <footer class="footer">© By Aline & Mariana - 2020</footer>
+        <footer className="footer">© By Aline Rozetti & Mariana Barros - 2020</footer>
       </>
     )
   }

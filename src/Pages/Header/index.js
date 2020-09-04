@@ -17,8 +17,8 @@ export default function () {
           <span onClick={onClickPokemons}>Login</span>
         </div>
       </nav>
-      <a><img class="title" src="https://fontmeme.com/permalink/200904/4694367609be71dac48b393fda107914.png"
-        alt="fonte-de-pokemon-go" border="0" /></a>
+      <span><img className="title" src="https://fontmeme.com/permalink/200904/4694367609be71dac48b393fda107914.png"
+        alt="fonte-de-pokemon-go" border="0" /></span>
     </>
   )
 }

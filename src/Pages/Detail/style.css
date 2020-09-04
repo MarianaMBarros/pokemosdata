@@ -1,15 +1,5 @@
-/* 
-body{
-  background-image: linear-gradient(rgb(59, 4, 59), violet);
-  margin: auto;
-  padding: 0px;
-}
 
-.fundo{
-  background-image: url("https://images5.alphacoders.com/820/820614.png");
-  padding: 30px;
-  text-align: center;
-}
+
 
 .top{
   display: flex;
@@ -24,7 +14,7 @@ body{
 }
 
 .name-pokemon{
-  color: cornsilk;
+  color: #3c5aa6;
   font-size: 50px ;
   font-style:italic;
   font-family: "Flexo-Medium",arial,sans-serif;
@@ -41,8 +31,8 @@ body{
 
 
 .next-previous{
-  background-color: rgb(138, 8, 138);
-  color: cornsilk;
+  background-color: #2a75bb3f;
+  color: #3c5aa6;
   padding: 10px;
   margin: 40px;
   border-radius:10px;
@@ -72,8 +62,8 @@ body{
 }
 
 .img{
-  background-color: rgb(138, 8, 138);
-  box-shadow: 9px 7px 5px rgba(50,50,50,0.77);
+  background-color: #3c5aa6;
+  box-shadow: 9px 7px 5px #c7a1087c;
   border-radius: 6px;
   width: 300px;
   height: 300px;
@@ -89,8 +79,8 @@ body{
 }
 
 .data-type li {
-  background-color: rgb(138, 8, 138);
-  box-shadow: 9px 7px 5px rgba(50,50,50,0.77);
+  background-color: #3c5aa6;
+  box-shadow: 9px 7px 5px #c7a1087c;
   padding: 0 70px;
   border-radius: 10px;
   margin-top: 10px;
@@ -98,8 +88,8 @@ body{
 }
 
 .data{
-  background-color: rgb(138, 8, 138);
-  box-shadow: 9px 7px 5px rgba(50,50,50,0.77);
+  background-color: #3c5aa6;
+  box-shadow: 9px 7px 5px #c7a1087c;
   color: cornsilk;
   border-radius: 10px;
   margin-top: 120px;
@@ -126,11 +116,11 @@ body{
 }
 
 .data-flex li:nth-child(even) {
-  background:rgba(54, 22, 54, 0.616);
+  background:#293e74;
 }
 
 .data-flex li:nth-child(odd) {
-  background:rgba(100, 25, 100, 0.561);
+  background:#5078df;
 }
 
 .evolu{
@@ -142,7 +132,7 @@ body{
   font-size: 18px;
 }
 
-.evolu li{
+/* .evolu li{
   background-color: rgb(138, 8, 138);
   box-shadow: 9px 7px 5px rgba(50,50,50,0.77);
   color: cornsilk;
@@ -152,7 +142,7 @@ body{
   margin: 40px;
   font-size: 20px;
   transition: ease-in 0.6s;
-}
+} */
 
 .evolu li:hover{
   opacity: 0.5;
@@ -269,4 +259,4 @@ footer {
     max-width: 100px;
     max-height: 800px;
   }
-} */
+}
