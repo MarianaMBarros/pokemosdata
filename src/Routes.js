@@ -5,7 +5,7 @@ import Detail from "./Pages/Detail/index"
 
 const Routes = () => (
   <Switch>
-    <Route path="/detail/:id" exact>
+    <Route path="/detail/:num" exact>
       <Detail />
     </Route>
     <Route path="/" exact>

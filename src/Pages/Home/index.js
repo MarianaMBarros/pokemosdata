@@ -5,15 +5,15 @@ import '../../Gallery/gallery.min.css';
 import data from '../../data/pokemon.js';
 import { useHistory } from "react-router-dom";
 
-function App() {
+export default function () {
   const history = useHistory();
 
-  function handleDetail(id) {
-    history.push(`/detail/${id}`);
+  function handleDetail(num) {
+    history.push(`/detail/${num}`);
   }
 
   return (
-    <div>
+    <>
       <header class="fundo">
         <h1>
           <a>
@@ -120,8 +120,6 @@ function App() {
 
       </main>
       <footer class="footer">© By Aline & Mariana - 2020</footer>
-    </div>
+    </>
   );
 }
-
-export default App;
