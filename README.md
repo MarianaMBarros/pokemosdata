@@ -11,11 +11,12 @@
 
 
 ## 1. Resumo
-Este projeto é a segunda versão (refatoração em react) e tem como objetivo atender a usuários do jogo Pokémon Go, que deseja ter um site onde possa encontrar toda a ficha sobre um determinado pokemon.
+Este projeto é a 2ª versão (refatoração em react) e tem como objetivo atender a usuários do jogo Pokémon Go, que deseja ter um site onde possa encontrar toda a ficha sobre um determinado pokemon.
 Essas informações podem ser atribuidas ao clicar em um determinado Pokémon
 ou em uma filtragem de nome, tipo ou de ordenação.
 
-Para acesso à plataforma, o usuário deverá utilizar o link: 
+Para acesso à plataforma da 1ª versão, o usuário deverá utilizar o link: https://marianambarros.github.io/SAP004-data-lovers/     
+Para acesso à plataforma da 2ª versão, o usuário deverá utilizar o link: 
 
 ## 2. Usuário (Persona)
 Para o desenvolvimento nas histórias de usuario criamos a persona.        
