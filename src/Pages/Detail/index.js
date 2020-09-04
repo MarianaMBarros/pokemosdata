@@ -12,16 +12,11 @@ export default function () {
     setPokemon(poke)
   }, [num]);
 
-
-
-
   return (
     <>
       <header id="gif" class="fundo">
-        <a>
-          <img class="title" src="https://fontmeme.com/permalink/200429/65da7acdb7f16431618ddbf607e03edc.png"
-            alt="fonte-de-pokemon-go" border="0" />
-        </a>
+        <a><img class="title" src="https://fontmeme.com/permalink/200429/65da7acdb7f16431618ddbf607e03edc.png"
+          alt="fonte-de-pokemon-go" border="0" /></a>
       </header>
       <main>
         <h3 id="name" class="name-pokemon">{pokemon.name}</h3>

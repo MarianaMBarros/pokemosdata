@@ -1,68 +1,79 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pokediary
 
-## Available Scripts
+## Índice
+  - [1. Resumo](#1-resumo)
+  - [2. Usuário (Persona)](#2-usu%c3%a1rio-persona)
+  - [3. História de Usuário](#3-hist%c3%b3ria-de-usu%c3%a1rio)
+  - [4. Função do Projeto](#1-FunçãodoProjeto)
+  - [5. Protótipo](#5-Prototipo)
+  - [6. Testes de Usabilidade](#6-TestesdeUsabilidade)
+  - [7. Considerações](#7-Considerações)
 
-In the project directory, you can run:
 
-### `yarn start`
+## 1. Resumo
+Este projeto é a segunda versão (refatoração em react) e tem como objetivo atender a usuários do jogo Pokémon Go, que deseja ter um site onde possa encontrar toda a ficha sobre um determinado pokemon.
+Essas informações podem ser atribuidas ao clicar em um determinado Pokémon
+ou em uma filtragem de nome, tipo ou de ordenação.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Para acesso à plataforma, o usuário deverá utilizar o link: 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## 2. Usuário (Persona)
+Para o desenvolvimento nas histórias de usuario criamos a persona.        
 
-### `yarn test`
+<div><img src="./public/img/persona3.png" width="100"></div>
+Persona 1
+  César - 31 anos
+  Solteiro - Relações Publicas
+  Gosta de Pokemon desde criança
+  joga Pokemon Go desde o lançamento
+  Gostaria que a filtragem dos pokémons fosse por nome.
+<div><img src="./public/img/persona4.png" width="100"></div>
+Persona 2
+  José Adauto - 34 anos
+  Casado - Arquiteto de Software
+  Gosta de jogar Pokemon Go com os filhos
+  Gostaria de filtrar os Pokémons por nome, poder, força, e fraqueza.
+<div><img src="./public/img/persona1.png" width="100"></div>
+Persona 3
+  Kelle - 17 anos
+  Solteira - Desempregada
+  gosta de Pokemon Go e joga por diversão
+  Para filtrar os Pokémons gostaria que fossem por nome, poder e evolução.
+<div><img src="./public/img/persona2.png" width="100"></div>
+Persona 4
+  Fabiana - 36 anos
+  Casada - Empresária
+  gosta de Pokemon, joga por diversão
+  Gostaria dos dados Pokémom em outra tela.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 3. História de Usuário
 
-### `yarn build`
+De acordo com a persona definida, a história de usuário vai entrar para atender suas necessidades, onde atraves de pesquisa
+foi atribuido o que é prioridade para o usuario em cada etapa do processo.
+Formulario para adquirir mais informações sobre o que o usuario deseja: https://forms.gle/Zicb6kqJX1ffNfPi6
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Sprints.
+HU-1: Exibir os Pokémons com seus nomes e numeração.
+HU-2: Mostrar dados dos pokémons.
+HU-3: Pesquisa por nome.
+HU-4: Filtrar por tipo.
+HU-5: Cálculo de Pokémons.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## 4. Função do Projeto
+O projeto tem como função de visualização dos Pokémons e seus dados. Essas informações podem ser atribuidas ao clicar em um determinado Pokémon
+ou em uma filtragem de nome, tipo ou de ordenação.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 5. Protótipo
+- Rascunho no papel:
+  <div><img src="./public/img/protTela1.png" width="200"> <img src="./public/img/protTela2.png" width="197"></div>
 
-### `yarn eject`
+- Esboço no Computador:
+  ![Protótipo](./public/img/protTelaPc.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 6. Testes de Usabilidade:
+  Os testes foram realizados para obter os feedbacks do usuários sobre como estava a visualização do site, apartir deste ponto foi detectado que ao acessar os dados do pokémon tinha uma necessidade de ter suas evoluções com imagem  e ter a possibilidade de ir para o proximo pokémon da lista ou voltar para o anterior.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## 7. Considerações
+   * Para ter acesso ao projeto faça um `fork` ou um `clone`.
+   * Instale as dependencias com o comando no terminal `npm install`.
+   * Para verificar sua aplicação faça um `npm start` no terminal e nele aparecerá  a url para acessar o ser servidor na web `http://localhost:5000`.
