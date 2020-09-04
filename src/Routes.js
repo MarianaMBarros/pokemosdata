@@ -1,12 +1,16 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import Home from "./Pages/Home/index"
+import Pokemons from "./Pages/Pokemons/index"
 import Detail from "./Pages/Detail/index"
+import Home from "./Pages/Home";
 
 const Routes = () => (
   <Switch>
     <Route path="/detail/:num" exact>
       <Detail />
+    </Route>
+    <Route path="/pokemons" exact>
+      <Pokemons />
     </Route>
     <Route path="/" exact>
       <Home />

@@ -25,8 +25,7 @@ export default function () {
           <a id="next" class="next-previous"></a>
         </div>
         <div class="data-pokemon">
-          <div>
-            <img id="imgPoke" class="img" />
+          <div><img id="imgPoke" class="img" />
             <div class="data-type">
               <label>TIPO</label>
               <ul id="type"></ul>

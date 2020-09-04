@@ -2,12 +2,28 @@ import React, { useEffect } from 'react';
 import './style.css';
 import '../../Gallery/gallery.theme.css';
 import '../../Gallery/gallery.min.css';
+import data from '../../data/pokemon.js';
+import { useHistory } from "react-router-dom";
 
 export default function () {
+  const history = useHistory();
+
+  function handleDetail(num) {
+    history.push(`/detail/${num}`);
+  }
+
   return (
     <>
-      <header class="ola">
+      <header class="fundo">
+        <h1>
+          <a>
+            <img class="title" src="https://fontmeme.com/permalink/200429/65da7acdb7f16431618ddbf607e03edc.png"
+              alt="fonte-de-pokemon-go" border="0" />
+          </a>
+        </h1>
+
         <section class="gallery autoplay items-3">
+
           <div id="item-1" class="control-operator"></div>
           <div id="item-2" class="control-operator"></div>
           <div id="item-3" class="control-operator"></div>
@@ -22,7 +38,7 @@ export default function () {
             <a href="./detail?num=150"><img class="img-top3" src="http://www.serebii.net/pokemongo/pokemon/150.png" /></a>
             <a href="./detail?num=065"><img class="img-top3" src="http://www.serebii.net/pokemongo/pokemon/065.png" /></a>
             <a href="./detail?num=149"><img class="img-top3" src="http://www.serebii.net/pokemongo/pokemon/149.png" /></a>
-          </figure>
+          </figure>data
 
           <figure class="item">
             <div>
@@ -53,22 +69,57 @@ export default function () {
             <a href="#item-2" class="control-button"><i class="fas fa-dizzy"></i></a>
             <a href="#item-3" class="control-button"><i class="fas fa-heart"></i></a>
           </div>
+
         </section>
       </header>
-      <div>
-        <span class="sub-title">Descubra o Universo Pokemon!!!</span>
-        <span>
-          <p>O que são Pokémon?</p>
-          Pokémon são criaturas de todas as formas e tamanhos que convivem com os humanos na natureza.
-          Na grande maioria, os Pokémon não falam, exceto para proferir seus nomes.
-          Os Pokémon são criados e comandados por seus donos (os chamados "Treinadores").
-          No decorrer das aventuras, os Pokémon crescem e ganham experiência, podendo até mesmo evoluir para
-          Pokémon mais fortes. Alguns Pokémon, como Pikachu, Piplup e Charizard, possuem papéis de destaque na
-          série de videogames, no jogo Estampas Ilustradas e nos programas de TV, mas eles são apenas algumas
-          das quase 500 criaturas que habitam o universo dos Pokémon.
-        </span>
 
-      </div>
+      <main>
+        <p class="sub-title">Descubra o Universo Pokemon!!!</p>
+        <section class="container-search">
+          <div class="container-search-type">
+            <label for="">Buscar por tipo:</label>
+            <select name="select" id="select-element">
+            </select>
+            <button class="btn-header" id="btn-element">Buscar</button>
+          </div>
+          <div class="container-search-name">
+            <label for="">Buscar por nome:</label>
+            <input id="search" type="text" placeholder="Digite o nome do pokemon" />
+            <button class="btn-header" id="btn-name">Buscar</button>
+          </div>
+          <div class="container-list-order">
+            <label for="">Ordenar:</label>
+            <select name="select" id="select-order">
+              <option value="">Selecionar</option>
+              <option value="name-asc">A-Z</option>
+              <option value="name-desc">Z-A</option>
+              <option value="weight-asc">Peso min-max</option>
+              <option value="weight-desc">Peso max-min</option>
+              <option value="number-asc">menor-maior</option>
+              <option value="number-desc">maior-menor</option>
+            </select>
+            <button class="btn-header" id="btn-order">Ordenar</button>
+
+          </div>
+        </section>
+
+        <section id="container-list">
+          <div class="text">
+            <p class="hide" id="statistics"></p>
+            <ul id="list" class="list">
+              {data.pokemon.map(poke => (
+                <li onClick={() => handleDetail(poke.num)}><span> N°{poke.num}<img src={poke.img}
+                /> {poke.name}</span></li>
+              ))
+              }
+            </ul>
+            <button id="loadMore" class="show btn-load-more">Carregar Mais</button>
+            <button id="loadAll" class="hide btn-load-more">Carregar Tudo</button>
+          </div>
+        </section>
+
+      </main>
+      <footer class="footer">© By Aline & Mariana - 2020</footer>
     </>
-  )
+  );
 }
