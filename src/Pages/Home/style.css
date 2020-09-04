@@ -1,3 +1,13 @@
-.ola{
-color:#FFFFFF
+.top{
+  color:#FFCC03;
+  font-size: 60px;
+  font-family: 'Grandstander', cursive;
+  }
+
+.title-home{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 16px;
 }
