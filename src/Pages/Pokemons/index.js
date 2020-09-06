@@ -12,6 +12,7 @@ export default function () {
   const [typePokemons, setTypePokemons] = useState([]);
   const [limitPokemon, setLimitPokemon] = useState(10);
   const [typeSelected, setTypeSelected] = useState(null);
+  const [orderSelected, setOrderSelected] = useState(null);
 
   useEffect(() => {
     get(limitPokemon, typeSelected).then(response => {
@@ -59,7 +60,7 @@ export default function () {
           </div>
           <div className="container-list-order">
             <label for="">Ordenar:</label>
-            <select name="select">
+            <select name="select" onChange={(e) => setOrderSelected(e.target.value)}>
               <option value="">Selecionar</option>
               <option value="name-asc">A-Z</option>
               <option value="name-desc">Z-A</option>

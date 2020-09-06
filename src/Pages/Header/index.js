@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { useHistory, useParams } from "react-router-dom";
+import React from 'react';
+import { useHistory } from "react-router-dom";
 
 
 export default function () {
@@ -8,15 +8,21 @@ export default function () {
   const onClickPokemons = () => {
     history.push("/pokemons");
   };
+  const onClickHome = () => {
+    history.push("/");
+  };
+  const onClickLogin = () => {
+    history.push("/login");
+  };
 
   return (
     <>
       <div className="header">
         <nav>
           <div>
-            <span onClick={onClickPokemons}>Pagina Inicial</span>
+            <span onClick={onClickHome}>Pagina Inicial</span>
             <span onClick={onClickPokemons}>Pokemons</span>
-            <span onClick={onClickPokemons}>Login</span>
+            <span onClick={onClickLogin}>Login</span>
           </div>
         </nav>
         <span><img className="title" src="https://fontmeme.com/permalink/200904/4694367609be71dac48b393fda107914.png"

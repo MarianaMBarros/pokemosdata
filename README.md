@@ -73,7 +73,7 @@ ou em uma filtragem de nome, tipo ou de ordenação.
   <div><img src="./src/img/protTela1.png" width="200"> <img src="./src/img/protTela2.png" width="197"></div>
 
 - Esboço no Computador:
-  ![Protótipo](./public/img/protTelaPc.png)
+  ![Protótipo](./src/img/protTelaPc.png)
 
 ## 6. Testes de Usabilidade:
   Os testes foram realizados para obter os feedbacks do usuários sobre como estava a visualização do site, apartir deste ponto foi detectado que ao acessar os dados do pokémon tinha uma necessidade de ter suas evoluções com imagem  e ter a possibilidade de ir para o proximo pokémon da lista ou voltar para o anterior.
