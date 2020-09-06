@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './style.css';
-import data from '../../data/pokemon.js';
+import { getDetail } from '../../services/pokemonService';
 import { useParams, useHistory } from "react-router-dom";
 import Header from "../Header/index";
 
@@ -9,25 +9,16 @@ export default function () {
   const [pokemon, setPokemon] = useState(null);
   let { num } = useParams();
 
+  useEffect(() => {
+    getDetail(num).then(response => {
+      setPokemon(response)
+    });
+  }, [num]);
+
 
   function handleDetail(num) {
     history.push(`/detail/${num}`);
   }
-
-  useEffect(() => {
-    const current = data.pokemon.find(item => item.num === num)
-    let nextId = current.id + 1
-    if (nextId === 152) {
-      nextId = 1
-    }
-    let previousId = current.id - 1;
-    if (previousId === 0) {
-      previousId = 151
-    }
-    const next = data.pokemon.find(item => item.id === nextId)
-    const previous = data.pokemon.find(item => item.id === previousId)
-    setPokemon({ current, next, previous })
-  }, [num]);
 
   if (pokemon === null) {
     return null

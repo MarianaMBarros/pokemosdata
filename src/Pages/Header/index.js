@@ -8,6 +8,7 @@ export default function () {
   const onClickPokemons = () => {
     history.push("/pokemons");
   };
+
   return (
     <>
       <div className="header">
