@@ -12,13 +12,14 @@ export default function () {
   const [typePokemons, setTypePokemons] = useState([]);
   const [limitPokemon, setLimitPokemon] = useState(10);
   const [typeSelected, setTypeSelected] = useState(null);
-  const [orderSelected, setOrderSelected] = useState(null);
+  const [searchName, setSearchName] = useState(null);
+  // const [orderSelected, setOrderSelected] = useState(null);
 
   useEffect(() => {
-    get(limitPokemon, typeSelected).then(response => {
+    get(limitPokemon, typeSelected, searchName).then(response => {
       setPokemons(response)
     });
-  }, [limitPokemon, typeSelected]);
+  }, [limitPokemon, typeSelected, searchName]);
 
   useEffect(() => {
     getType().then(response => {
@@ -53,14 +54,9 @@ export default function () {
               }
             </select>
           </div>
-          <div className="container-search-name">
-            <label for="">Buscar por nome:</label>
-            <input type="text" placeholder="Digite o nome do pokemon" />
-            <button className="btn-header" >Buscar</button>
-          </div>
           <div className="container-list-order">
             <label for="">Ordenar:</label>
-            <select name="select" onChange={(e) => setOrderSelected(e.target.value)}>
+            <select name="select" >
               <option value="">Selecionar</option>
               <option value="name-asc">A-Z</option>
               <option value="name-desc">Z-A</option>
@@ -69,6 +65,9 @@ export default function () {
               <option value="number-asc">menor-maior</option>
               <option value="number-desc">maior-menor</option>
             </select>
+          </div>
+          <div className="container-search-name">
+            <input type="text" placeholder="Digite o nome do pokemon" onChange={(e) => setSearchName(e.target.value.toLowerCase())} />
           </div>
         </section>
 
