@@ -25,26 +25,26 @@ Para acesso à plataforma da 1ª versão, o usuário deverá utilizar o link: ht
 ## 2. Usuário (Persona)
 Para o desenvolvimento nas histórias de usuario criamos a persona.        
 
-<div><img src="./src/img/persona3.png" width="100"></div>
+<div><img src="./public/img/persona3.png" width="100"></div>
 Persona 1
   César - 31 anos
   Solteiro - Relações Publicas
   Gosta de Pokemon desde criança
   joga Pokemon Go desde o lançamento
   Gostaria que a filtragem dos pokémons fosse por nome.
-<div><img src="./src/img/persona4.png" width="100"></div>
+<div><img src="./public/img/persona4.png" width="100"></div>
 Persona 2
   José Adauto - 34 anos
   Casado - Arquiteto de Software
   Gosta de jogar Pokemon Go com os filhos
   Gostaria de filtrar os Pokémons por nome, poder, força, e fraqueza.
-<div><img src="./src/img/persona1.png" width="100"></div>
+<div><img src="./public/img/persona1.png" width="100"></div>
 Persona 3
   Kelle - 17 anos
   Solteira - Desempregada
   gosta de Pokemon Go e joga por diversão
   Para filtrar os Pokémons gostaria que fossem por nome, poder e evolução.
-<div><img src="./src/img/persona2.png" width="100"></div>
+<div><img src="./public/img/persona2.png" width="100"></div>
 Persona 4
   Fabiana - 36 anos
   Casada - Empresária
@@ -70,10 +70,10 @@ ou em uma filtragem de nome, tipo ou de ordenação.
 
 ## 5. Protótipo de Baixa Fidelidade
 - Rascunho no papel:
-  <div><img src="./src/img/protTela1.png" width="200"> <img src="./src/img/protTela2.png" width="197"></div>
+  <div><img src="./public/img/protTela1.png" width="200"> <img src="./public/img/protTela2.png" width="197"></div>
 
 - Esboço no Computador:
-  ![Protótipo](./src/img/protTelaPc.png)
+  ![Protótipo](./public/img/protTelaPc.png)
 
 ## 6. Testes de Usabilidade:
   Os testes foram realizados para obter os feedbacks do usuários sobre como estava a visualização do site, apartir deste ponto foi detectado que ao acessar os dados do pokémon tinha uma necessidade de ter suas evoluções com imagem  e ter a possibilidade de ir para o proximo pokémon da lista ou voltar para o anterior.

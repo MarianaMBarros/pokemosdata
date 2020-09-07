@@ -66,11 +66,8 @@ export default function () {
               <option value="number-desc">maior-menor</option>
             </select>
           </div>
-          <div className="container-search-name">
-            <input type="text" placeholder="Digite o Nome do Pokémon" onChange={(e) => setSearchName(e.target.value.toLowerCase())} />
-          </div>
+          <input type="text" placeholder="Digite o Nome do Pokémon" onChange={(e) => setSearchName(e.target.value.toLowerCase())} />
         </section>
-
         <section>
           <div className="text">
             <p className="hide" ></p>
