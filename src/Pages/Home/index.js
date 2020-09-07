@@ -3,6 +3,7 @@ import './style.css';
 import '../../Gallery/gallery.theme.css';
 import '../../Gallery/gallery.min.css';
 import Header from "../Header/index";
+import { Link } from "react-router-dom";
 
 export default function () {
   return (
@@ -19,25 +20,25 @@ export default function () {
           <div>
             <span className="top">Top 3 - Ataque</span>
           </div>
-          <a href="./detail?num=150"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/150.png" /></a>
-          <a href="./detail?num=065"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/065.png" /></a>
-          <a href="./detail?num=149"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/149.png" /></a>
+          <Link to="/detail/150"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/150.png" /></Link>
+          <Link to="/detail/065"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/065.png" /></Link>
+          <Link to="/detail/149"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/149.png" /></Link>
         </figure>
         <figure className="item">
           <div>
             <span className="top">Top 3 - Defesa</span>
           </div>
-          <a href="/detail/num=091"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/091.png" /></a>
-          <a href="/detail/num=095"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/095.png" /></a>
-          <a href="/detail/num=144"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/144.png" /></a>
+          <Link to="/detail/091"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/091.png" /></Link>
+          <Link to="/detail/095"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/095.png" /></Link>
+          <Link to="/detail/144"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/144.png" /></Link>
         </figure>
         <figure className="item">
           <div>
             <span className="top">Top 3 - HP</span>
           </div>
-          <a href="./detail?num=113"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/113.png" /></a>
-          <a href="./detail?num=143"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/143.png" /></a>
-          <a href="./detail?num=134"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/134.png" /></a>
+          <Link to="/detail/113"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/113.png" /></Link>
+          <Link to="/detail/143"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/143.png" /></Link>
+          <Link to="/detail/134"><img className="img-top3" src="http://www.serebii.net/pokemongo/pokemon/134.png" /></Link>
         </figure>
         <div className="text-pokemon">
           <h1>O que são Pokémon?</h1>
