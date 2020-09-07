@@ -11,13 +11,15 @@ export default function () {
   const [pokemons, setPokemons] = useState([]);
   const [typePokemons, setTypePokemons] = useState([]);
   const [limitPokemon, setLimitPokemon] = useState(10);
+  const [countPokemon, setCountPokemon] = useState(151);
   const [typeSelected, setTypeSelected] = useState(null);
   const [searchName, setSearchName] = useState(null);
   const [orderBySelected, setOrderBySelected] = useState("num");
 
   useEffect(() => {
     get(limitPokemon, typeSelected, searchName, orderBySelected).then(response => {
-      setPokemons(response)
+      setPokemons(response.pokemons)
+      setCountPokemon(response.count)
     });
   }, [limitPokemon, typeSelected, searchName, orderBySelected]);
 
@@ -47,7 +49,10 @@ export default function () {
         <section className="container-search">
           <div className="container-search-type">
             <label for="">Buscar por tipo:</label>
-            <select name="select" onChange={(e) => setTypeSelected(e.target.value)}>
+            <select name="select" onChange={(e) => {
+              setLimitPokemon(10)
+              setTypeSelected(e.target.value)
+            }}>
               {typePokemons.map(item => (
                 <option value={item}>{item}</option>
               ))
@@ -76,7 +81,7 @@ export default function () {
               ))
               }
             </ul>
-            {limitPokemon <= 150 ? (
+            {limitPokemon <= countPokemon ? (
               <>
                 <button className="btn-load-more" onClick={onClickLimitPokemons}>Carregar Mais</button>
                 <button className="btn-load-more" onClick={onClickTotalPokemons}>Carregar Tudo</button>

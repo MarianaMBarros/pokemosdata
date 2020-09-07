@@ -27,7 +27,7 @@ export async function get(limit, type, name, orderBy) {
     pokemons = pokemons.filter(item => item.name.toLowerCase().includes(name));
   }
   pokemons = pokemons.sort(dynamicSort(orderBy));
-  return pokemons.slice(0, limit);
+  return { pokemons: pokemons.slice(0, limit), count: pokemons.length };
 }
 
 export async function getType() {
