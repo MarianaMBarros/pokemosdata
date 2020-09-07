@@ -1,6 +1,6 @@
 {
-  "name": "sap004-data-lovers-react",
-  "homepage": "https://marianambarros.github.io/SAP004-data-lovers-React",
+  "name": "pokemosdata",
+  "homepage": "https://marianambarros.github.io/pokemosdata",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

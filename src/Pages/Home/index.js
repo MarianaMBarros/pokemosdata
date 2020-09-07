@@ -10,7 +10,7 @@ export default function () {
     <>
       <Header />
       <div className="title-home">
-        <span className="sub-title">Descubra o Universo Pokemon!!!</span>
+        <span className="sub-title">Descubra o Universo Pokemon!!! teste teste</span>
       </div>
       <section className="gallery autoplay items-3">
         <div id="item-1" className="control-operator"></div>
