@@ -18,7 +18,7 @@ export async function getDetail(num) {
   return { current, next, previous }
 }
 
-export async function get(limit, type, name,) {
+export async function get(limit, type, name, orderBy) {
   const response = await axios.get("/pokemon.json");
   let pokemons = response.data;
   if (type !== null && type !== "Todos") {
@@ -27,7 +27,7 @@ export async function get(limit, type, name,) {
   if (name !== null) {
     pokemons = pokemons.filter(item => item.name.toLowerCase().includes(name));
   }
-  pokemons = pokemons.sort((a, b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
+  pokemons = pokemons.sort(dynamicSort(orderBy));
   return pokemons.slice(0, limit);
 }
 
@@ -36,4 +36,19 @@ export async function getType() {
   let filterType = response.data.reduce((prev, curr) => [...prev, ...curr.type], [])
   const sortType = [...new Set(filterType)].sort();
   return ["Todos", ...sortType];
+}
+
+function dynamicSort(property) {
+  let sortOrder = 1;
+  if (property[0] === "-") {
+    sortOrder = -1;
+    property = property.substr(1);
+  }
+  return function (a, b) {
+    if (sortOrder == -1) {
+      return b[property].localeCompare(a[property]);
+    } else {
+      return a[property].localeCompare(b[property])
+    }
+  }
 }

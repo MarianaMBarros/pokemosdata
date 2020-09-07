@@ -13,13 +13,13 @@ export default function () {
   const [limitPokemon, setLimitPokemon] = useState(10);
   const [typeSelected, setTypeSelected] = useState(null);
   const [searchName, setSearchName] = useState(null);
-  // const [orderSelected, setOrderSelected] = useState(null);
+  const [orderBySelected, setOrderBySelected] = useState("num");
 
   useEffect(() => {
-    get(limitPokemon, typeSelected, searchName).then(response => {
+    get(limitPokemon, typeSelected, searchName, orderBySelected).then(response => {
       setPokemons(response)
     });
-  }, [limitPokemon, typeSelected, searchName]);
+  }, [limitPokemon, typeSelected, searchName, orderBySelected]);
 
   useEffect(() => {
     getType().then(response => {
@@ -56,14 +56,12 @@ export default function () {
           </div>
           <div className="container-list-order">
             <label for="">Ordenar:</label>
-            <select name="select" >
+            <select name="select" onChange={(e) => setOrderBySelected(e.target.value)}>
               <option value="">Selecionar</option>
-              <option value="name-asc">A-Z</option>
-              <option value="name-desc">Z-A</option>
-              <option value="weight-asc">Peso min-max</option>
-              <option value="weight-desc">Peso max-min</option>
-              <option value="number-asc">menor-maior</option>
-              <option value="number-desc">maior-menor</option>
+              <option value="name">A-Z</option>
+              <option value="-name">Z-A</option>
+              <option value="num">Num-asc</option>
+              <option value="-num">Num-desc</option>
             </select>
           </div>
           <input type="text" placeholder="Digite o Nome do Pokémon" onChange={(e) => setSearchName(e.target.value.toLowerCase())} />
