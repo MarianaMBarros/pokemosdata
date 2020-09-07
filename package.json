@@ -1,5 +1,6 @@
 {
-  "name": "sap004-data-lovers-reactv2",
+  "name": "sap004-data-lovers-react",
+  "homepage": "https://marianambarros.github.io/SAP004-data-lovers-React",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
