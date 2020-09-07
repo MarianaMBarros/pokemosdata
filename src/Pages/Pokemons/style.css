@@ -10,7 +10,7 @@
 }
 
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer,  hgroup, menu, nav, section {
 	display: block;
 }
 
@@ -72,15 +72,7 @@ a {
   padding-top: 20px;
 }
 
-.text-pokemon {
-  background-color: #2a75bb3f;
-  text-align: center;
-  font-size: 15px;
-  color: #3c5aa6;
-  padding-top: 30px;
-  margin:50px;
 
-}
 
 .list {
   background-color: transparent;
@@ -95,28 +87,95 @@ a {
 
 .container-search {
   display: flex;
-  justify-content: space-between;
-  margin-left: 50px;
-  padding-top: 50px;
+  justify-content: space-between; 
+  margin: 100px 50px 0;
   font-size: 15px;
   font-weight: bold;
-  color: white;
+  color:#3c5aa6;
   flex-wrap: wrap;
 }
 
-.container-search-type,
-.container-search-name,
-.container-list-order {
-  margin-right: 50px;
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 select {
-  height: 22px;
+  font-size:15px;
+  flex: 1;
+  padding: 0 .5em;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  width: 10em;
+  height: 3em;
+  line-height: 3;
+  background: #5480ee;
+  overflow: hidden;
+  border-radius: .25em;
+}
+
+select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+select:hover::after {
+  color: #f39c12;
 }
 
 input {
-  width: 180px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  color: #555;
+  box-sizing: border-box;
+  font-family: 'Arvo';
+  font-size: 18px;
+  height: 50px;
+  left: 50%;
+  margin: -25px  -100px;
+  padding: 10px 0px;
+  position: relative;
+  top: 50%;
+  width: 200px;
 }
+input:focus {
+  outline: none;    
+}
+input::-webkit-input-placeholder {
+  color: #AAA;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: dodgerblue;
+}
+
+input:focus+.underline {
+  transform: scale(1);
+}
+
 
 .btn-header {
   width: 80px;
@@ -134,7 +193,7 @@ input {
   font-size: 17px;
 }
 
-li {
+.list li {
   width: 150px;
   margin: 40px;
   text-align: center;
@@ -158,7 +217,7 @@ li {
 .btn-load-more {
   margin: 20px;
   width: 200px;
-  height: 40px;
+  height: 50px;
   background-color:#2a75bb3f;
   border-radius: 10px;
   font-size: 20px;

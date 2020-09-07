@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import Pokemons from "./Pages/Pokemons/index"
 import Detail from "./Pages/Detail/index"
 import Home from "./Pages/Home";
-import Login from "./Pages/Home";
+import Login from "./Pages/404";
 
 const Routes = () => (
   <Switch>

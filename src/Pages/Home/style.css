@@ -1,15 +1,39 @@
 .top{
   color:#FFCC03;
-  display: flex;
-  align-items: center;
   font-size: 60px;
   font-family: 'Grandstander', cursive;
   }
 
-.title-home{
+.title-home,
+.text-pokemon{
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   border-radius: 16px;
+}
+
+.text-pokemon {
+  background-color: #2a75bb3f;
+  border-radius: 16px;
+  text-align: center;
+  color: #3c5aa6;
+  margin: 50px 200px 0; 
+}
+.text-pokemon p {
+  font-size: 15px;
+  color: #3c5aa6;
+  margin: 20px;
+}
+
+.top{
+  height: 200px;
+  width: 100px;
+}
+
+.Top-item{
+  margin: 15px;
+  height: 130px;
+  text-align: center;
 }

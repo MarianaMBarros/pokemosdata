@@ -1,8 +1,18 @@
 .header {
   position: absolute;
   top: 0%;
-  background-color: #272626;
+  background-color: #2a75bb3f;
   padding: 7px 0;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin:15px;
+  color:#3c5aa6;
 }

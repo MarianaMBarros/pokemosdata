@@ -67,7 +67,7 @@ export default function () {
             </select>
           </div>
           <div className="container-search-name">
-            <input type="text" placeholder="Digite o nome do pokemon" onChange={(e) => setSearchName(e.target.value.toLowerCase())} />
+            <input type="text" placeholder="Digite o Nome do Pokémon" onChange={(e) => setSearchName(e.target.value.toLowerCase())} />
           </div>
         </section>
 

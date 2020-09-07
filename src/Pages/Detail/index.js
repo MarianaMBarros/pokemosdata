@@ -20,6 +20,9 @@ export default function () {
     history.push(`/detail/${num}`);
   }
 
+  function handlePokemons(num) {
+    history.push('/pokemons');
+  }
   if (pokemon === null) {
     return null
   } else {
@@ -29,14 +32,18 @@ export default function () {
         <div>
           <h3 className="name-pokemon">{pokemon.current.name} N°{pokemon.current.num}</h3>
           <div className="next-prev">
-            <span className="next-previous" onClick={() => handleDetail(pokemon.previous.num)}> {pokemon.previous.name} N°{pokemon.previous.num}</span>
-            <span className="next-previous" onClick={() => handleDetail(pokemon.next.num)}>{pokemon.next.name} N°{pokemon.next.num} </span>
+            <span className="next-previous" onClick={() => handleDetail(pokemon.previous.num)}>
+              <img className="" src="../../img/next.png" />
+              {pokemon.previous.name} N°{pokemon.previous.num} </span>
+            <span className="next-previous" onClick={() => handleDetail(pokemon.next.num)}>
+              {pokemon.next.name} N°{pokemon.next.num}
+              <img className="" src="../../img/next.png" /> </span>
           </div>
           <div className="data-pokemon">
             <div><img className="img" src={pokemon.current.img} />
               <div className="data-type">
                 <label>TIPO</label>
-                <ul id="type">
+                <ul>
                   {pokemon.current.type.map(item => <li>{item}</li>)}
                 </ul>
               </div>
@@ -61,7 +68,7 @@ export default function () {
           </div>
           <ul className="evolu"></ul>
           <div className="btn-end">
-            <button className="btn-explore"><a href="index.html">Explorar Mais Pokemons</a></button>
+            <button className="btn-load-more" onClick={handlePokemons}>Explorar Mais Pokemons</button>
           </div>
         </div>
         <footer className="footer">© By Aline Rozetti & Mariana Barros - 2020</footer>
