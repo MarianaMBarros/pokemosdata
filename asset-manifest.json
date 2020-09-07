@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/pokemosdata/static/css/main.963d3eb4.chunk.css",
-    "main.js": "/pokemosdata/static/js/main.458cf28e.chunk.js",
-    "main.js.map": "/pokemosdata/static/js/main.458cf28e.chunk.js.map",
+    "main.js": "/pokemosdata/static/js/main.3003530d.chunk.js",
+    "main.js.map": "/pokemosdata/static/js/main.3003530d.chunk.js.map",
     "runtime-main.js": "/pokemosdata/static/js/runtime-main.68cd8379.js",
     "runtime-main.js.map": "/pokemosdata/static/js/runtime-main.68cd8379.js.map",
-    "static/js/2.84c816fb.chunk.js": "/pokemosdata/static/js/2.84c816fb.chunk.js",
-    "static/js/2.84c816fb.chunk.js.map": "/pokemosdata/static/js/2.84c816fb.chunk.js.map",
+    "static/js/2.a9426521.chunk.js": "/pokemosdata/static/js/2.a9426521.chunk.js",
+    "static/js/2.a9426521.chunk.js.map": "/pokemosdata/static/js/2.a9426521.chunk.js.map",
     "index.html": "/pokemosdata/index.html",
-    "precache-manifest.9c053333310efe648a42e4a8efced6b3.js": "/pokemosdata/precache-manifest.9c053333310efe648a42e4a8efced6b3.js",
+    "precache-manifest.e6d326886fcdeedad9e0af3187637f59.js": "/pokemosdata/precache-manifest.e6d326886fcdeedad9e0af3187637f59.js",
     "service-worker.js": "/pokemosdata/service-worker.js",
     "static/css/main.963d3eb4.chunk.css.map": "/pokemosdata/static/css/main.963d3eb4.chunk.css.map",
-    "static/js/2.84c816fb.chunk.js.LICENSE.txt": "/pokemosdata/static/js/2.84c816fb.chunk.js.LICENSE.txt"
+    "static/js/2.a9426521.chunk.js.LICENSE.txt": "/pokemosdata/static/js/2.a9426521.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.68cd8379.js",
-    "static/js/2.84c816fb.chunk.js",
+    "static/js/2.a9426521.chunk.js",
     "static/css/main.963d3eb4.chunk.css",
-    "static/js/main.458cf28e.chunk.js"
+    "static/js/main.3003530d.chunk.js"
   ]
 }
