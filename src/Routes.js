@@ -13,13 +13,12 @@ const Routes = () => (
     <Route path="/pokemons" exact>
       <Pokemons />
     </Route>
-    <Route path="/login" exact>
+    <Route path={`${process.env.PUBLIC_URL}/login`} exact>
       <Login />
     </Route>
-    <Route path="/" exact>
+    <Route path={process.env.PUBLIC_URL} exact>
       <Home />
     </Route>
-    <Redirect to="/" />
   </Switch>
 );
 
