@@ -1,8 +1,7 @@
 import axios from 'axios'
-import Pokemons from '../Pages/Pokemons';
 
 export async function getDetail(num) {
-  const response = await axios.get("/pokemon.json");
+  const response = await axios.get(`${process.env.PUBLIC_URL}/pokemon.json`);
 
   const current = response.data.find(item => item.num === num)
   let nextId = current.id + 1
@@ -19,7 +18,7 @@ export async function getDetail(num) {
 }
 
 export async function get(limit, type, name, orderBy) {
-  const response = await axios.get("/pokemon.json");
+  const response = await axios.get(`${process.env.PUBLIC_URL}/pokemon.json`);
   let pokemons = response.data;
   if (type !== null && type !== "Todos") {
     pokemons = pokemons.filter(item => item.type.includes(type));
@@ -32,7 +31,7 @@ export async function get(limit, type, name, orderBy) {
 }
 
 export async function getType() {
-  const response = await axios.get("/pokemon.json");
+  const response = await axios.get(`${process.env.PUBLIC_URL}/pokemon.json`);
   let filterType = response.data.reduce((prev, curr) => [...prev, ...curr.type], [])
   const sortType = [...new Set(filterType)].sort();
   return ["Todos", ...sortType];
