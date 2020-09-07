@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b028ba3e65d6a78d4a93293a13f6fbd",
+    "revision": "b648e636103a90c13c247ace75d8b0f3",
     "url": "/pokemosdata/index.html"
   },
   {
-    "revision": "0ac0102ca10f01f53df3",
+    "revision": "3833eb967af541824385",
     "url": "/pokemosdata/static/css/main.963d3eb4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pokemosdata/static/js/2.a9426521.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0ac0102ca10f01f53df3",
-    "url": "/pokemosdata/static/js/main.3003530d.chunk.js"
+    "revision": "3833eb967af541824385",
+    "url": "/pokemosdata/static/js/main.e0022c5f.chunk.js"
   },
   {
     "revision": "b2d5b0e774434d55d0a7",
