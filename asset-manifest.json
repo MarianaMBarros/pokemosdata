@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/pokemosdata/static/css/main.963d3eb4.chunk.css",
-    "main.js": "/pokemosdata/static/js/main.91e2dde2.chunk.js",
-    "main.js.map": "/pokemosdata/static/js/main.91e2dde2.chunk.js.map",
+    "main.js": "/pokemosdata/static/js/main.a906149d.chunk.js",
+    "main.js.map": "/pokemosdata/static/js/main.a906149d.chunk.js.map",
     "runtime-main.js": "/pokemosdata/static/js/runtime-main.68cd8379.js",
     "runtime-main.js.map": "/pokemosdata/static/js/runtime-main.68cd8379.js.map",
     "static/js/2.a9426521.chunk.js": "/pokemosdata/static/js/2.a9426521.chunk.js",
     "static/js/2.a9426521.chunk.js.map": "/pokemosdata/static/js/2.a9426521.chunk.js.map",
     "index.html": "/pokemosdata/index.html",
-    "precache-manifest.1396090052954a461274dcbf95832818.js": "/pokemosdata/precache-manifest.1396090052954a461274dcbf95832818.js",
+    "precache-manifest.46f74ef933246d6232f754e8e202a5e2.js": "/pokemosdata/precache-manifest.46f74ef933246d6232f754e8e202a5e2.js",
     "service-worker.js": "/pokemosdata/service-worker.js",
     "static/css/main.963d3eb4.chunk.css.map": "/pokemosdata/static/css/main.963d3eb4.chunk.css.map",
     "static/js/2.a9426521.chunk.js.LICENSE.txt": "/pokemosdata/static/js/2.a9426521.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.68cd8379.js",
     "static/js/2.a9426521.chunk.js",
     "static/css/main.963d3eb4.chunk.css",
-    "static/js/main.91e2dde2.chunk.js"
+    "static/js/main.a906149d.chunk.js"
   ]
 }
