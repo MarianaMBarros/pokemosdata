@@ -8,7 +8,7 @@ export default function () {
       <Header />
       <div className="container">
         <span className="sub-title">Página em Construção!</span>
-        <img src="../img/pikachu.gif" />
+        <img className="gif" src="../img/pikachu.gif" />
       </div>
     </>
   )

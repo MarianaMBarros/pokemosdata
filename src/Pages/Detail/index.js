@@ -33,11 +33,11 @@ export default function () {
           <h3 className="name-pokemon">{pokemon.current.name} N°{pokemon.current.num}</h3>
           <div className="next-prev">
             <span className="next-previous" onClick={() => handleDetail(pokemon.previous.num)}>
-              <img className="" src="../../img/next.png" />
+              <img className="image" src="../../img/next.png" />
               {pokemon.previous.name} N°{pokemon.previous.num} </span>
             <span className="next-previous" onClick={() => handleDetail(pokemon.next.num)}>
               {pokemon.next.name} N°{pokemon.next.num}
-              <img className="" src="../../img/next.png" /> </span>
+              <img className="image" src="../../img/previous.png" /> </span>
           </div>
           <div className="data-pokemon">
             <div><img className="img" src={pokemon.current.img} />
